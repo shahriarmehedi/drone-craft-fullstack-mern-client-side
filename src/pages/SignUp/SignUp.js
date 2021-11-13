@@ -73,7 +73,7 @@ const SignUp = () => {
     // SAVE USER TO DATABASE
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('http://localhost:5000/users', {
+        fetch('https://warm-peak-17617.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
@@ -107,15 +107,15 @@ const SignUp = () => {
                             </label>
                             <input onBlur={handlePasswordChange} required type="password" placeholder="Type your password" className="input text-gray-900 text-lg" />
                             <br /><br />
-                            <input type="submit" value="SIGNUP NOW" className=" btn bg-yellow-400 hover:bg-green-700 text-white" />
+                            <input type="submit" value="SIGNUP NOW" className=" btn custom-pink-lite hover:bg-gray-500 text-white" />
                             <br />
                             <div className="text-red-500 pb-5">
                                 {error}
                             </div>
-                            <h2>Have an Account?<NavLink to="/login" className="text-green-300">Click to Login</NavLink></h2>
+                            <h2>Have an Account?<NavLink to="/login" className="text-red-500">Click to Login</NavLink></h2>
                             <br />
                             <button onClick={handleSignInUsingGoogle} className=" btn bg-gray-50 hover:bg-gray-200 text-gray-500 border-none">
-                                <i className="fab fa-google text-xl text-green-400 pr-2"></i>Signup With Google</button>
+                                <i className="fab fa-google text-xl text-red-500 pr-2"></i>Signup With Google</button>
                         </div>
                     </form>
                 </div>

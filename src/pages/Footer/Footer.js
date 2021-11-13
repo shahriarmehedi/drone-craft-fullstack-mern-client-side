@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap md:text-left text-center order-first">
                         <div className="lg:w-1/3 md:w-1/2 w-full px-4">
-                            <h2 className="title-font text-pink-500 font-medium tracking-widest text-sm mb-3">Our Branches</h2>
+                            <h2 className="title-font text-red-500 font-medium tracking-widest text-sm mb-3">Our Branches</h2>
                             <nav className="list-none mb-10">
                                 <li>
                                     <a className="text-gray-400 hover:text-white">Dhaka</a>
@@ -26,7 +26,7 @@ const Footer = () => {
                             </nav>
                         </div>
                         <div className="lg:w-1/3 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-pink-500 tracking-widest text-sm mb-3">Important Links</h2>
+                            <h2 className="title-font font-medium text-red-500 tracking-widest text-sm mb-3">Important Links</h2>
                             <nav className="list-none mb-10">
                                 <li>
                                     <a className="text-gray-400 hover:text-white">About Us</a>

@@ -15,7 +15,7 @@ const ProductDetails = () => {
 
     //  LOADING DATA
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://warm-peak-17617.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProductDetails(data))
     }, []);
@@ -36,12 +36,13 @@ const ProductDetails = () => {
                 <div className="bg-gray-800 w-5/6 md:w-3/4 lg:w-3/5 rounded-box xl:w-1/2 py-10 mx-auto">
                     <h2 className=" py-10 text-center text-4xl font-bold text-gray-50"> {product_name} </h2>
                     <img className="mx-auto w-5/6 rounded-box" src={product_imgURL} alt="" />
-                    <h2 className="text-gray-200 pt-10 w-5/6 lg:w-2/5 mx-auto pb-2">Brand: {product_brand} </h2>
-                    <h2 className="text-gray-200 pt-10 w-5/6 text-2xl  mx-auto">Product Details: </h2>
+                    <h2 className="text-gray-200 pt-10 w-5/6 lg:w-2/5 mx-auto pb-2">Brand: <div class="badge badge-primary badge-outline badge-lg">{product_brand}</div>  </h2>
+                    <h2 className="text-white pt-5 w-5/6 lg:w-2/5 mx-auto pb-10 text-xl font-bold">Price: <span className="text-white mx-auto text-2xl font-bold">$ {product_price}</span> </h2>
+                    <h2 className="text-gray-200 w-5/6 text-2xl  mx-auto"><div class="badge badge-primary badge-lg">Product Details:</div>  </h2>
                     <h2 className="text-gray-200 pt-10 w-5/6  mx-auto pb-2">{product_details} </h2>
 
-                    <h2 className="text-white pt-5 w-5/6 lg:w-2/5 mx-auto pb-20 text-xl font-bold">Price: <span className="text-white mx-auto text-2xl font-bold">$ {product_price}</span> </h2>
-                    <NavLink to={`/order/${_id}`} activeStyle={{ fontWeight: "bold", color: "#34D399" }}><button className="px-16 py-4 mb-10 custom-pink-dark rounded hover:bg-gray-800 text-white hover:text-white transition duration-300 ">Buy Now</button></NavLink>
+
+                    <NavLink to={`/order/${_id}`} activeStyle={{ fontWeight: "bold", color: "#34D399" }}><button className="px-16 py-4 my-10 custom-pink-dark rounded hover:bg-gray-600 text-white hover:text-white transition duration-300 ">Buy Now</button></NavLink>
                 </div>
             </motion.div></>
     );

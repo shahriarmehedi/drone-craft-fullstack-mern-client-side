@@ -18,7 +18,7 @@ const Order = () => {
 
     //  LOADING DATA
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${orderId}`)
+        fetch(`https://warm-peak-17617.herokuapp.com/products/${orderId}`)
             .then(res => res.json())
             .then(data => setOrderInfo(data))
     });
@@ -55,7 +55,7 @@ const Order = () => {
         // SEND TO SERVER
         console.log(placeOrder);
 
-        axios.post('http://localhost:5000/orders', placeOrder)
+        axios.post('https://warm-peak-17617.herokuapp.com/orders', placeOrder)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Order Placed successfully');
@@ -75,16 +75,17 @@ const Order = () => {
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 className="bg-yellow-50 text-white pb-24">
-                <h1 className="pt-10 pb-20 text-center text-3xl font-bold text-gray-700">Confirm Your Booking</h1>
-                <div className="">
-                    <div className="w-5/6 md:w-3/4 lg:w-3/5 rounded xl:w-1/2 py-10 bg-gray-800 mx-auto">
+                <h1 className="pt-10 pb-20 text-center text-3xl font-bold text-gray-700">Confirm Your Order</h1>
+                <div className="flex flex-col lg:flex-row w-5/6 mx-auto">
+                    <div className="md:w-3/4 lg:w-3/5 xl:w-1/2 rounded-xl lg:mr-5 py-10 bg-gray-800 mx-auto">
                         <h3 className="text-2xl font-bold">Selected Product : {product_name} </h3>
-                        <h4> Product ID: {_id} </h4> <br />
-                        <img className="mx-auto" src={product_imgURL} alt="" />
-                        <h4 className="text-2xl"> Price: $ {product_price} </h4>
-                        <h4 className="text-2xl"> Brand: {product_brand} </h4>
+                        <h4 className="mt-2"> Product ID: <div class="badge badge-primary">{_id}</div>
+                        </h4> <br />
+                        <img className="mx-auto rounded-lg w-11/12" src={product_imgURL} alt="" />
+                        <h4 className="text-2xl my-3 font-bold"> Price: $ {product_price} </h4>
+                        <h4 className="text-2xl"> Brand:  <div class="badge badge-primary badge-outline badge-lg">{product_brand}</div>  </h4>
                     </div> <br />
-                    <div className="w-5/6 md:w-3/4 lg:w-3/5 xl:w-1/2 mx-auto custom-pink-dark rounded">
+                    <div className=" md:w-3/4 lg:w-3/5 xl:w-1/2 mx-auto custom-pink-dark rounded-xl">
                         <form className=" add-service-form w-5/6 mx-auto py-20 text-gray-800" onSubmit={handlePlaceOrderSubmit}>
 
                             <label className="label">
@@ -114,7 +115,7 @@ const Order = () => {
                             <textarea required type="textarea" name="useraddress" onBlur={handleOnBlur} />
 
                             <br />
-                            <input className=" bg-gray-700 hover:bg-gray-800 transition duration-300 text-white mt-12 submit-btn" type="submit" defaultValue="CONFIRM BOOKING" />
+                            <input className=" bg-gray-700 hover:bg-gray-800 transition duration-300 text-white mt-12 submit-btn" type="submit" value="PLACE ORDER" />
                         </form>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ const ManageAllOrders = () => {
     const [myOrders, setMyOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://warm-peak-17617.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setMyOrders(data))
 
@@ -18,7 +18,7 @@ const ManageAllOrders = () => {
     const handleDeleteOrder = id => {
         const proceed = window.confirm('Are you sure to delete this Booking?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://warm-peak-17617.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -40,7 +40,7 @@ const ManageAllOrders = () => {
     const handleConfirmBookingShipped = id => {
         const confirmedShipped = { status: "shipped" };
 
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://warm-peak-17617.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

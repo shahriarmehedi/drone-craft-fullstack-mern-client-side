@@ -78,7 +78,7 @@ const Login = () => {
                             </label>
                             <input onBlur={handlePasswordChange} required type="password" placeholder="Type your password" className="input text-gray-900 text-lg" />
                             <br /><br />
-                            <input type="submit" value="LOGIN" className=" btn bg-yellow-400 hover:bg-green-700 text-white border-none" />
+                            <input type="submit" value="LOGIN" className=" btn custom-pink-lite hover:bg-gray-500 text-white border-none" />
                             <br />
                             <div className="text-red-500 pb-5">
                                 {error}
@@ -86,10 +86,10 @@ const Login = () => {
                             <div>
                                 {success}
                             </div>
-                            <h2>Need Account?<NavLink className="text-green-300" to="/signup">Click to Signup</NavLink></h2>
+                            <h2>Need Account?<NavLink className="text-red-500" to="/signup">Click to Signup</NavLink></h2>
                             <br />
                             <button onClick={handleSignInUsingGoogle} className=" btn bg-gray-50 hover:bg-gray-200 text-gray-500 border-none">
-                                <i className="fab fa-google text-xl text-green-400 pr-2"></i>SignIn With Google</button>
+                                <i className="fab fa-google text-xl text-red-500 pr-2"></i>SignIn With Google</button>
                         </div>
                     </form>
                 </div>

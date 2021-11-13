@@ -8,7 +8,7 @@ const DashboardHome = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://warm-peak-17617.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
 
@@ -17,7 +17,7 @@ const DashboardHome = () => {
 
     const [totalOrders, setTotalOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://warm-peak-17617.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setTotalOrders(data))
 
@@ -25,7 +25,7 @@ const DashboardHome = () => {
 
     const [totalUsers, setTotalUsers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('https://warm-peak-17617.herokuapp.com/users')
             .then(res => res.json())
             .then(data => setTotalUsers(data))
 
