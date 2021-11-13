@@ -1,0 +1,39 @@
+[
+   {
+      "id": "aerobics-zumba",
+      "name": "Aerobics & Zumba",
+      "subtitle": "Groove and workout to trendy tunes",
+      "image": "https://i.ibb.co/R0qMZzR/1.png"
+   },
+   {
+      "id": "crossfit-training",
+      "name": "Crossfit Training",
+      "subtitle": "High intensity workout with your friends",
+      "image": "https://i.ibb.co/FK4Wtbc/2.png"
+   },
+   {
+      "id": "cardio-training",
+      "name": "Cardio Training",
+      "subtitle": "Lose that belly fat now with cardio training",
+      "image": "https://i.ibb.co/ggFsCRp/3.png"
+   },
+   {
+      "id": "endurance-training",
+      "name": "Endurance Training",
+      "subtitle": "Build your stamina with us today",
+      "image": "https://i.ibb.co/FYqg9Y2/4.png"
+   },
+   {
+      "id": "strength-training",
+      "name": "Strength Training",
+      "subtitle": "Gain muscle weight & strength at our gym",
+      "image": "https://i.ibb.co/d53S4TF/5.png"
+   },
+   {
+      "id": "weight-loss",
+      "name": "Weight Loss",
+      "subtitle": "Lose excess fat with personal training",
+      "image": "https://i.ibb.co/Bns62wL/6.png"
+   }
+   
+]

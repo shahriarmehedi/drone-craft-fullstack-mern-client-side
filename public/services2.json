@@ -1,0 +1,42 @@
+{
+   "services": [
+      {
+         "id": "aerobics-zumba",
+         "name": "Aerobics & Zumba",
+         "description": "Energize your mornings and come train and workout with our personal trainers at Mutants Gym. Join our Aerobics Yoga and Zumba lessons and have fun while exercising.",
+         "picture": "https://i.ibb.co/R0qMZzR/1.png"
+      },
+      {
+         "id": "crossfit-training",
+         "name": "Crossfit Training",
+         "description": "Train with the best of the best in an intense workout session under the expert guidance of our personal trainers only at our special Gym.",
+         "picture": "https://i.ibb.co/FK4Wtbc/2.png"
+      },
+      {
+         "id": "cardio-training",
+         "name": "Cardio Training",
+         "description": "Work on your abs and core with state-of-the-art equipments specially brought to you by the best gym at Dhaka, Bangladesh.",
+         "picture": "https://i.ibb.co/ggFsCRp/3.png"
+      },
+      {
+         "id": "endurance-training",
+         "name": "Endurance Training",
+         "description": "Improve your stamina and workout with your friends while listening to trendy tune at one of the hottest gyms at Dhaka, Bangladesh.",
+         "picture": "https://i.ibb.co/FYqg9Y2/4.png"
+      },
+      {
+         "id": "strength-training",
+         "name": "Strength Training",
+         "description": "Build your strength and get those extra few pounds in before the swimsuit season. Come train under expert personal trainers only at our special Gym.",
+         "picture": "https://i.ibb.co/d53S4TF/5.png"
+      },
+      {
+         "id": "weight-loss",
+         "name": "Weight Loss",
+         "description": "Lose extra weight and get in shape with expert personal trainers and top notch fitness equipments only at Mutants Gym, the best gym in Bangladesh.",
+         "picture": "https://i.ibb.co/Bns62wL/6.png"
+      }
+      
+      
+   ]
+}

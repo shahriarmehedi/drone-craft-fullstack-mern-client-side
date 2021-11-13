@@ -1,0 +1,18 @@
+.user-name {
+  position: relative;
+  top: 8px;
+}
+
+.user-photo {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.custom-pink-lite {
+  background-color: #FF0062;
+}
+
+.custom-pink-dark {
+  background-color: #DB094F;
+}

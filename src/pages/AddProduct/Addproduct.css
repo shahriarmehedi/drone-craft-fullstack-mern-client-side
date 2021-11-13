@@ -1,0 +1,16 @@
+.add-service-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-service-form input,
+textarea {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  cursor: pointer;
+}
