@@ -38,7 +38,7 @@ const UserReview = () => {
                     <label className="label">
                         <span className="label-text text-white">Type a rating number (Between 1-5):</span>
                     </label>
-                    <input {...register("rating", { min: 1, max: 5 })} />
+                    <input type="number" {...register("rating", { min: 1, max: 5 })} />
 
                     <label className="label">
                         <span className="label-text text-white">Your comment for us:</span>

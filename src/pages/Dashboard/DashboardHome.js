@@ -42,7 +42,7 @@ const DashboardHome = () => {
 
     return (
         <div className="bg-yellow-50 px-5 xl:px-20 h-screen">
-            <h2 className="pt-10 pb-10 text-center text-3xl font-bold text-gray-700">This is Dashboard Home</h2>
+            <h2 className="pt-10 pb-10 text-center text-3xl font-bold text-gray-700">Welcome to Dashboard</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3">
                 <div className="py-10 bg-green-500 rounded text-white mx-5 mb-5">
                     <h3 className="">Total Prodcts</h3>

@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID
+    apiKey: "AIzaSyAFcQ8Aj4URnllChnU_0Ax1G_FdVkOMkAY",
+    authDomain: "shahriar-dronecraft.firebaseapp.com",
+    projectId: "shahriar-dronecraft",
+    storageBucket: "shahriar-dronecraft.appspot.com",
+    messagingSenderId: "857768157555",
+    appId: "1:857768157555:web:c5e85783017ea93d20a506"
 };
 
 export default firebaseConfig;

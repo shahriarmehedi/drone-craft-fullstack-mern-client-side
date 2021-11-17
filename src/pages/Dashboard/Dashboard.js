@@ -128,7 +128,7 @@ const Dashboard = () => {
 
 
                     <li onClick={logOut} className=" custom-pink-lite rounded cursor-pointer hover:bg-gray-50 hover:text-gray-800 transition duration-150 mt-32">
-                        <a className="mx-auto hover:bg-gray-50"><button><i className="fas fa-sign-out-alt mr-2"></i> Log Out</button></a>
+                        <a className="mx-auto"><button><i className="fas fa-sign-out-alt mr-2"></i> Log Out</button></a>
                     </li>
                 </ul>
             </div>

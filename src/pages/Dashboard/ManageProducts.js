@@ -19,7 +19,7 @@ const ManageProducts = () => {
     const handleDeleteProduct = id => {
         const proceed = window.confirm('Are you sure to delete this product?');
         if (proceed) {
-            const url = `https://warm-peak-17617.herokuapp.com/product/${id}`;
+            const url = `https://warm-peak-17617.herokuapp.com/products/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -43,7 +43,7 @@ const ManageProducts = () => {
             initial={{ opacity: 0 }}
             className="bg-yellow-50">
             <h1 className="pt-10 pb-5 text-center text-3xl font-bold text-gray-700">Manage All Products</h1>
-            <p className="text-gray-400 pt-2 pb-20">Logged in user can only see his/her orders here and can cancel it.</p>
+            <p className="text-gray-400 pt-2 pb-20">Admin can manage this stores products</p>
 
 
             {
@@ -73,7 +73,7 @@ const ManageProducts = () => {
                                         </div>
                                     </td>
                                     <td className="font-bold">{product.product_name}</td>
-                                    <td>{product.product_brand}</td>
+                                    <td><span className="badge badge-primary badge-md"> {product.product_brand} </span></td>
                                     <td>{product.product_price}</td>
 
                                     <th>

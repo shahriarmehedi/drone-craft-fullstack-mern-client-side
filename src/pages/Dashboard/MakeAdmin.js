@@ -36,7 +36,7 @@ const MakeAdmin = () => {
 
     return (
         <div>
-            <h2 className=" pb-20 pt-20 text-center text-3xl font-bold text-gray-700 ">Upgrade an user to an Admin</h2>
+            <h2 className=" pb-20 pt-20 text-center text-3xl font-bold text-gray-700 ">Upgrade user to an Admin</h2>
             <div className="text-gray-800 pb-16 bg-gray-800 pt-10 rounded-box w-11/12 md:w-5/6 lg:w-2/5 mx-auto">
                 <form className=" add-service-form w-5/6 mx-auto " onSubmit={handleMakeAdmin}>
                     <label className="label">
