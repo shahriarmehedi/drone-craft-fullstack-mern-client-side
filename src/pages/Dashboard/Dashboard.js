@@ -53,7 +53,7 @@ const Dashboard = () => {
                         <Route path={`${path}/myOrders`}>
                             <MyOrders></MyOrders>
                         </Route>
-                        <Route path={`${path}/pay`}>
+                        <Route path={`${path}/pay/:orderId`}>
                             <Pay></Pay>
                         </Route>
                         <Route path={`${path}/userReview`}>

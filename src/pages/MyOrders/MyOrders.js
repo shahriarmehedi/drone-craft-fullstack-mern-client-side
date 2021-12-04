@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import useAuth from '../../hooks/useAuth';
+import { NavLink } from 'react-router-dom';
 
 
 const MyOrders = () => {
@@ -110,6 +111,10 @@ const MyOrders = () => {
 
                                     </td>
                                     <th>
+                                        {
+                                            order.payment ?
+                                                <button className=" bg-green-600 transition duration-150 hover:bg-green-800 text-white px-4 py-2 mr-2 rounded-md"><i className="fas fa-money-check mr-2"></i> Paid</button> : <NavLink to={`/dashboard/pay/${order._id}`}><button className=" bg-green-600 transition duration-150 hover:bg-green-800 text-white px-4 py-2 mr-2 rounded-md"><i className="fas fa-money-check mr-2"></i> Pay</button></NavLink>
+                                        }
                                         <button onClick={() => handleDeleteOrder(order._id)} className=" bg-red-600 transition duration-150 hover:bg-red-800 text-white px-4 py-2 rounded-md"><i className="fas fa-trash mr-2"></i> Delete</button>
                                     </th>
                                 </tr>
